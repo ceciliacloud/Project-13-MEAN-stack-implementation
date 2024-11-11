@@ -26,8 +26,8 @@ Together, these technologies work seamlessly to create an efficient, scalable, a
    - Verify t2.micro Instance Type is selected
    - Create and download an RSA keypair
 
- **Configure Security Group**
-   - Create new security group
+ **Configure the Security Group**
+   - Create a new security group
    - Add the following inbound rules:
 
      - Allow traffic on port 80 (HTTP) with source from anywhere on the internet.
@@ -370,12 +370,12 @@ cd ../..
 
 mkdir public && cd public
 ```
-- Add a file named script.js into public folder
+- Add a file named `script.js` into public folder
 
 ```bash
 vim script.js
 ```
-- Copy and paste the code below (controller configuration defined) into the script.js file.
+- Copy and paste the code below (controller configuration defined) into the `script.js` file.
 
 ```bash
 var app = angular.module('myApp', []);
@@ -464,7 +464,7 @@ app.controller('myCtrl', function($scope, $http) {
 ```bash
 vim index.html
 ```
-- Copy and paste the code below into index.html file
+- Copy and paste the code below into the `index.html` file
 
 ```bash
 <!DOCTYPE html>
@@ -539,7 +539,7 @@ node server.js
 
 ![connected](./images/connected.png)
 
-The server is now up and running on port 3300! The Book Register web application can now be accessed from the internet with a browser using the `Public IP addres`s or `Public DNS name`.
+The server is now up and running on port 3300! The Book Register web application can now be accessed from the internet with a browser using the `Public IP address` or `Public DNS name`.
 
 ![register](./images/bookresource.png)
 
